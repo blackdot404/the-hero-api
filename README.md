@@ -9,8 +9,8 @@ Para que você possa utilizar esse código segue o passo a passo.
 ### Pré-requisitos
 Você irá precisar instalar o seguintes software na sua maquina.
 
-*[NodeJS](https://nodejs.org/en/download/)
-*[Yarnpkg](https://classic.yarnpkg.com/en/docs/install)
+* [NodeJS](https://nodejs.org/en/download/).
+* [Yarnpkg](https://classic.yarnpkg.com/en/docs/install).
 
 Efetue o clone do repositorio para sua maquina:
 ```
@@ -31,9 +31,9 @@ Agora é só ir para o código, o nodemon irá acompanhar qualquer alteração q
 
 ## Desenvolvido com
 
-*[NodeJS](https://nodejs.org/en/download/) - Interpretador de JavaScript.
-*[Yarnpkg](https://classic.yarnpkg.com/en/docs/install) - Software de Gerenciamento de Dependências.
-*[ExpressJS](https://expressjs.com/) - Framework WEB.
+* [NodeJS](https://nodejs.org/en/download/) - Interpretador de JavaScript.
+* [Yarnpkg](https://classic.yarnpkg.com/en/docs/install) - Software de Gerenciamento de Dependências.
+* [ExpressJS](https://expressjs.com/) - Framework WEB.
 
 ## Como contruibuir
 
