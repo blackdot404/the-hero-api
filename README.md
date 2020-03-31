@@ -1,7 +1,7 @@
 # Be The Hero
 BackEnd da API da aplicação Be The Hero da Semana Omnistack 11, que foi uma semana de aulas disponibilizada pelo canal no Youtube Rocketseat.
 
-Essa aplicação tem como objetivo facilitar que usuários comuns possa doar e ajudar [ONGs](https://pt.wikipedia.org/wiki/Organiza%C3%A7%C3%A3o_n%C3%A3o_governamental), onde ONGs podem acessar criar seu acesso e também criar casos para que usuários possam entrar em contato para efetuar a doação.
+Essa aplicação tem como objetivo facilitar que usuários comuns possa doar e ajudar [ONGs](https://pt.wikipedia.org/wiki/Organiza%C3%A7%C3%A3o_n%C3%A3o_governamental), onde podem acessar criar seu acesso e também criar casos para que usuários possam entrar em contato para efetuar a doação.
 
 ## Guia de Instalação
 Para que você possa utilizar esse código segue o passo a passo.
