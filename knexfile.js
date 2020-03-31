@@ -1,4 +1,8 @@
 // Update with your config settings.
+/**
+ * Antes de iniciar o projeto gerar seu arquivo .env
+ */
+require('dotenv/config');
 
 module.exports = {
 
@@ -14,34 +18,34 @@ module.exports = {
   },
 
   staging: {
-    client: 'postgresql',
+    client: process.env.DB_CLIENT,
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: process.env.DB_NAME,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PASS
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: process.env.DIR_MIGRATIONS
     }
   },
 
   production: {
-    client: 'postgresql',
+    client: process.env.DB_CLIENT,
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: process.env.DB_NAME,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PASS
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: process.env.DIR_MIGRATIONS
     }
   }
 
