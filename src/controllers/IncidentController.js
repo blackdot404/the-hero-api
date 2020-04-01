@@ -6,7 +6,6 @@ module.exports = {
      * Consulta casos de acordo com o id da ong.
      */
     const { page = 1 } = req.query;
-    const ong_id = req.headers.authorization;
 
     const [count] = await connection('incidents').count();
 

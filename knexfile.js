@@ -1,4 +1,7 @@
 // Update with your config settings.
+/**
+ * Modulo dotenv retirado temporariamente.
+ */
 
 module.exports = {
 
