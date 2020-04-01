@@ -29,6 +29,10 @@ $ yarn start
 
 Agora é só ir para o código, o nodemon irá acompanhar qualquer alteração que você salvar e irá reiniciar o servidor Node toda vez que sofrer uma alteração.
 
+## Front End
+A aplicação já possui seu proprio front-end, segue o repositorio. 
+[Be The Hero](https://github.com/blackdot404/the-hero-frontend)
+
 ## Desenvolvido com
 
 * [NodeJS](https://nodejs.org/en/download/) - Interpretador de JavaScript.
