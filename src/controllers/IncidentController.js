@@ -2,19 +2,21 @@ const connection = require('../database/connection');
 
 module.exports = {
   async index (req, res) {
+    /**
+     * Consulta casos de acordo com o id da ong.
+     */
     const { page = 1 } = req.query;
+    const ong_id = req.headers.authorization;
 
     const [count] = await connection('incidents').count();
-
-    // console.log(count);
 
     const incidents = await connection('incidents')
       .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
       .limit(5)
       .offset((page - 1) * 5)
       .select([
-        'incidents.*', 
-        'ongs.name', 
+        'incidents.*',
+        'ongs.name',
         'ongs.email',
         'ongs.whatsapp',
         'ongs.city',
@@ -22,11 +24,14 @@ module.exports = {
       ]);
 
     res.header('X-Total-Count', count['count(*)']);
-    
+
     return res.json(incidents);
   },
 
   async create (req, res) {
+    /**
+     * Cadastro de um novo caso
+     */
     const { title, description, value } = req.body;
     const ong_id = req.headers.authorization;
 
@@ -41,6 +46,9 @@ module.exports = {
   },
 
   async delete (req, res) {
+    /**
+     * deleta o caso de acordo com a ong
+     */
     const { id } = req.params;
     const ong_id = req.headers.authorization;
 
