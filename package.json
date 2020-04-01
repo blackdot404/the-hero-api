@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "db-migrations": "knex migrations:latest",
     "start": "nodemon src/index.js"
   },
   "dependencies": {
